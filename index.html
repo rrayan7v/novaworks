@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NovaWorks - Professional Web Agency in Nederland. Webdesign, Webdevelopment, Responsive Design en SEO Diensten.">
+    <title>NovaWorks - Web Agency | Professionele Websites op Maat</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        purple: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-b from-white via-indigo-50/30 to-white">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMxYTIzN2UiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djZoNnYtNmgtNnptNiA2djZoNnYtNmgtNnptLTYgNnY2aDZ2LTZoLTZ6bTYgMHY2aDZ2LTZoLTZ6bTYtMTJ2NmgtNnY2aDZ2NmgtNnYtNmgtNnY2aC02di02aC02di02aDZ2LTZoNnY2aDZ2LTZoNnptLTEyIDB2LTZoLTZ2Nmg2em0wIDB2Nmg2di02aC02eiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
+
+        <!-- Enhanced gradient overlays for depth -->
+        <div class="absolute top-0 right-0 h-[500px] w-[500px] max-w-full rounded-full bg-gradient-to-br from-indigo-300/10 to-indigo-500/10 blur-[80px]"></div>
+        <div class="absolute bottom-0 left-0 h-[500px] w-[500px] max-w-full rounded-full bg-gradient-to-tr from-indigo-700/10 to-indigo-500/10 blur-[80px]"></div>
+
+        <!-- Subtle animated accents -->
+        <div class="absolute top-1/4 left-1/4 h-64 w-64 rounded-full bg-gradient-to-br from-yellow-300/5 to-orange-500/5 blur-2xl animate-pulse"></div>
+        <div class="absolute bottom-1/3 right-1/4 h-64 w-64 rounded-full bg-gradient-to-br from-blue-300/5 to-cyan-500/5 blur-2xl animate-pulse"></div>
+
+        <!-- Decorative elements -->
+        <div class="absolute right-[15%] top-[20%] h-16 w-16 rounded-full border border-indigo-200/30 opacity-40"></div>
+        <div class="absolute left-[10%] bottom-[30%] h-24 w-24 rounded-full border border-indigo-200/20 opacity-30"></div>
+
+        <!-- Nieuwe subtiele zwevende elementen -->
+        <div class="absolute left-[25%] top-[15%] h-12 w-12 opacity-20 animate-float">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10L90 50L50 90L10 50L50 10Z" stroke="rgba(79, 70, 229, 0.2)" stroke-width="1" />
+            </svg>
+        </div>
+
+        <div class="absolute right-[30%] bottom-[20%] h-20 w-20 opacity-15 animate-bounce">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" stroke="rgba(79, 70, 229, 0.15)" stroke-width="1" stroke-dasharray="10 5" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid gap-12 md:grid-cols-2 md:items-center">
+                <div class="space-y-8">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center rounded-full border border-indigo-200 bg-white/70 px-4 py-2 backdrop-blur-sm">
+                        <div class="relative mr-2 h-3 w-3 overflow-hidden rounded-full">
+                            <!-- Pulsing background -->
+                            <span class="absolute inset-0 rounded-full bg-indigo-500 animate-ping opacity-70"></span>
+                            <!-- Core dot -->
+                            <span class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-indigo-500"></span>
+                        </div>
+                        <span class="text-sm font-medium text-indigo-700">
+                            Professionele websites op maat
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+                        Wij maken <span class="bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-transparent">websites</span> die werken voor uw bedrijf
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="text-lg text-gray-600 md:text-xl max-w-lg">
+                        NovaWorks ontwerpt en ontwikkelt websites die uw bedrijf laten groeien en uw doelen helpen bereiken.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col gap-4 sm:flex-row">
+                        <a href="pages/contact.html" class="group bg-gradient-to-r from-indigo-700 to-indigo-500 text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-lg hover:shadow-xl">
+                            Neem contact op
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+
+                        <a href="pages/portfolio.html" class="group bg-white text-gray-700 px-6 py-2.5 rounded-lg text-sm font-medium border-2 border-gray-200 hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center gap-2">
+                            Bekijk ons werk
+                            <svg class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Info Cards -->
+                    <div class="flex items-center gap-4 mt-8">
+                        <!-- Online sinds 2025 badge -->
+                        <div class="flex items-center gap-3 rounded-full border border-indigo-200/80 bg-gradient-to-r from-white to-indigo-50/50 px-4 py-2 shadow-sm backdrop-blur-sm">
+                            <div class="relative flex h-4 w-4 items-center justify-center">
+                                <!-- Pulserende achtergrond -->
+                                <div class="absolute inset-0 rounded-full bg-green-500/30 animate-ping"></div>
+                                <!-- Kern van de dot met glow effect -->
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-green-500 to-green-400"></div>
+                                <!-- Shine effect -->
+                                <div class="absolute h-full w-1/2 bg-white/30 blur-sm animate-pulse"></div>
+                            </div>
+                            <span class="text-sm font-medium bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                                Online sinds 2025
+                            </span>
+                        </div>
+
+                        <!-- Decoratieve divider -->
+                        <div class="flex h-8 items-center">
+                            <div class="h-full w-px bg-gradient-to-b from-transparent via-indigo-300/50 to-transparent"></div>
+                        </div>
+
+                        <!-- 100% maatwerk badge -->
+                        <div class="flex items-center gap-3 rounded-full border border-indigo-200/80 bg-gradient-to-r from-white to-indigo-50/50 px-4 py-2 shadow-sm backdrop-blur-sm">
+                            <div class="relative flex h-5 w-5 items-center justify-center">
+                                <!-- Animerende cirkel -->
+                                <div class="absolute inset-0 rounded-full border-2 border-dashed border-indigo-300/30 animate-spin"></div>
+                                <!-- Centrale icoon -->
+                                <div class="flex h-3 w-3 items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-indigo-500 animate-pulse">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-2 w-2 text-white">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span class="text-sm font-medium bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                                100% maatwerk
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative ml-auto mr-0">
+                    <div class="relative w-full max-w-2xl">
+                        <!-- Enhanced professional shadow and glow effect -->
+                        <div class="absolute -inset-8 rounded-2xl bg-gradient-to-r from-indigo-600/30 via-purple-500/20 to-indigo-400/30 blur-2xl animate-pulse"></div>
+                        
+                        <!-- Secondary glow layer -->
+                        <div class="absolute -inset-4 rounded-xl bg-gradient-to-br from-blue-500/15 to-purple-500/15 blur-xl"></div>
+
+                        <!-- Main image container with enhanced styling -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+                            <img src="assets/images/mockupbannerhomepagina.png" alt="NovaWorks website op laptop en smartphone" class="w-full h-auto transform hover:scale-105 transition-transform duration-700">
+
+                            <!-- Enhanced reflection effect -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-white/10"></div>
+                            
+                            <!-- Subtle overlay for depth -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent"></div>
+                        </div>
+
+                        <!-- Enhanced decorative elements -->
+                        <div class="absolute -top-16 -right-16 h-32 w-32 opacity-60">
+                            <div class="relative h-full w-full">
+                                <div class="absolute inset-0 rounded-full border-2 border-dashed border-indigo-300/40 animate-spin"></div>
+                                <div class="absolute inset-4 rounded-full border border-indigo-200/30 animate-pulse"></div>
+                                <div class="absolute top-1/2 left-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 animate-bounce"></div>
+                            </div>
+                        </div>
+
+
+                        <!-- Additional floating elements -->
+                        <div class="absolute top-1/4 -left-4 h-8 w-8 rounded-full bg-gradient-to-r from-purple-400/60 to-indigo-400/60 animate-float"></div>
+                        
+                        <div class="absolute bottom-1/3 -right-4 h-6 w-6 rounded-full bg-gradient-to-r from-blue-400/60 to-cyan-400/60 animate-bounce"></div>
+
+                        <!-- Subtle connection lines -->
+                        <svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20,20 Q50,10 80,20 T140,20"
+                                stroke="rgba(79, 70, 229, 0.2)"
+                                stroke-width="1"
+                                fill="none"
+                                stroke-dasharray="5,5"
+                                class="animate-pulse"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="relative py-24 overflow-hidden bg-gradient-to-b from-white via-indigo-50/30 to-white">
+        <!-- Enhanced background elements -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM0ZjQ2ZTUiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDM0djZoNnYtNmgtNnptNiA2djZoNnYtNmgtNnptLTYgNnY2aDZ2LTZoLTZ6bTYgMHY2aDZ2LTZoLTZ6bTYtMTJ2NmgtNnY2aDZ2NmgtNnYtNmgtNnY2aC02di02aC02di02aDZ2LTZoNnY2aDZ2LTZoNnptLTEyIDB2LTZoLTZ2Nmg2em0wIDB2Nmg2di02aC02eiIvPjwvZz48L2c+PC9zdmc+')] opacity-40"></div>
+        
+        <!-- Floating gradient orbs -->
+        <div class="absolute top-0 right-0 h-96 w-96 rounded-full bg-gradient-to-br from-indigo-300/20 to-purple-400/20 blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-gradient-to-tr from-blue-300/20 to-indigo-400/20 blur-3xl animate-pulse"></div>
+        
+        <!-- Subtle animated elements -->
+        <div class="absolute top-20 left-20 h-16 w-16 rounded-full border border-indigo-200/30 opacity-60 animate-float"></div>
+        <div class="absolute bottom-20 right-20 h-12 w-12 rounded-full border border-purple-200/30 opacity-50 animate-bounce"></div>
+        <div class="absolute top-1/2 left-10 h-8 w-8 rounded-full bg-gradient-to-r from-indigo-400/30 to-purple-400/30 animate-float"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center rounded-full border border-indigo-200 bg-white/70 px-4 py-2 backdrop-blur-sm mb-6">
+                    <div class="relative mr-2 h-3 w-3 overflow-hidden rounded-full">
+                        <span class="absolute inset-0 rounded-full bg-indigo-500 animate-ping opacity-70"></span>
+                        <span class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-indigo-500"></span>
+                    </div>
+                    <span class="text-sm font-medium text-indigo-700">
+                        Waarom kiezen voor NovaWorks?
+                    </span>
+                </div>
+                
+                <h2 class="text-4xl font-bold tracking-tight md:text-5xl mb-6">
+                    Professionele <span class="bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-transparent">weboplossingen</span> op maat
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Wij bieden geavanceerde webdiensten die uw bedrijf naar een hoger niveau tillen met moderne technologie en creatieve oplossingen.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="group relative bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 hover:border-indigo-200/80 overflow-hidden">
+                    <!-- Subtle background gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <!-- Professional border highlight -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                <svg class="w-8 h-8 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                                </svg>
+                            </div>
+                            <!-- Subtle icon glow -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500/20 to-indigo-600/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-all duration-300">Modern Design</h3>
+                        <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-all duration-300">
+                            Strak en professioneel webdesign dat perfect aansluit bij uw merkidentiteit en doelgroep.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group relative bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 hover:border-purple-200/80 overflow-hidden">
+                    <!-- Subtle background gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <!-- Professional border highlight -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                <svg class="w-8 h-8 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <!-- Subtle icon glow -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-all duration-300">Responsive Design</h3>
+                        <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-all duration-300">
+                            Uw website ziet er perfect uit op alle apparaten, van desktop tot smartphone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group relative bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 hover:border-blue-200/80 overflow-hidden">
+                    <!-- Subtle background gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <!-- Professional border highlight -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                <svg class="w-8 h-8 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <!-- Subtle icon glow -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-all duration-300">Snelle Laadtijd</h3>
+                        <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-all duration-300">
+                            Geoptimaliseerde websites voor razendsnelle laadtijden en een betere gebruikerservaring.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group relative bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 hover:border-green-200/80 overflow-hidden">
+                    <!-- Subtle background gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <!-- Professional border highlight -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                <svg class="w-8 h-8 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </div>
+                            <!-- Subtle icon glow -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-all duration-300">SEO Geoptimaliseerd</h3>
+                        <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-all duration-300">
+                            Uw website wordt gevonden in Google dankzij onze geavanceerde SEO-technieken.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="group relative bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 hover:border-orange-200/80 overflow-hidden">
+                    <!-- Subtle background gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <!-- Professional border highlight -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                <svg class="w-8 h-8 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                </svg>
+                            </div>
+                            <!-- Subtle icon glow -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-all duration-300">Veilig & Betrouwbaar</h3>
+                        <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-all duration-300">
+                            SSL-certificaten en regelmatige updates voor maximale veiligheid van uw website.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="group relative bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 hover:border-pink-200/80 overflow-hidden">
+                    <!-- Subtle background gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-pink-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <!-- Professional border highlight -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                                <svg class="w-8 h-8 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                </svg>
+                            </div>
+                            <!-- Subtle icon glow -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-pink-500/20 to-pink-600/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-pink-600 transition-all duration-300">24/7 Support</h3>
+                        <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-all duration-300">
+                            Altijd bereikbaar voor vragen en ondersteuning, wij staan voor u klaar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom gradient overlay -->
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="relative py-32 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <!-- Dark background pattern -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-40"></div>
+        
+        <!-- Glowing accent lines -->
+        <div class="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent"></div>
+        <div class="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
+        
+        <!-- Floating geometric shapes -->
+        <div class="absolute top-20 left-20 w-20 h-20 border border-indigo-500/20 rotate-45 animate-spin"></div>
+        <div class="absolute bottom-32 right-20 w-16 h-16 border border-purple-500/20 rounded-full animate-pulse"></div>
+        <div class="absolute top-1/2 left-10 w-12 h-12 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rotate-12 animate-float"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-24">
+                <div class="inline-flex items-center rounded-full border border-indigo-400/30 bg-white/10 px-6 py-3 backdrop-blur-sm mb-8">
+                    <div class="relative mr-3 h-4 w-4 overflow-hidden rounded-full">
+                        <span class="absolute inset-0 rounded-full bg-indigo-400 animate-ping opacity-70"></span>
+                        <span class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-400 to-purple-400"></span>
+                    </div>
+                    <span class="text-sm font-medium text-white">
+                        Onze Diensten
+                    </span>
+                </div>
+                
+                <h2 class="text-5xl font-bold tracking-tight md:text-6xl mb-8 text-white">
+                    Complete <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">weboplossingen</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                    Van concept tot lancering, wij bieden alle webdiensten die u nodig heeft om online te excelleren en uw doelen te bereiken.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Service 1 - Webdesign -->
+                <div class="group relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative bg-white/10 backdrop-blur-lg p-10 rounded-2xl border border-white/20 group-hover:border-indigo-400/50 transition-all duration-500 group-hover:-translate-y-2">
+                        <div class="flex items-start space-x-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-2xl">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-indigo-300 transition-colors duration-300">Webdesign</h3>
+                                <p class="text-gray-300 leading-relaxed mb-6 group-hover:text-gray-200 transition-colors duration-300">
+                                    Unieke en professionele designs die perfect aansluiten bij uw merkidentiteit en doelgroep. Wij creëren visueel aantrekkelijke interfaces die conversie stimuleren.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-sm border border-indigo-500/30">UI/UX Design</span>
+                                    <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-sm border border-indigo-500/30">Branding</span>
+                                    <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-sm border border-indigo-500/30">Prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 - Webdevelopment -->
+                <div class="group relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative bg-white/10 backdrop-blur-lg p-10 rounded-2xl border border-white/20 group-hover:border-purple-400/50 transition-all duration-500 group-hover:-translate-y-2">
+                        <div class="flex items-start space-x-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-2xl">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">Webdevelopment</h3>
+                                <p class="text-gray-300 leading-relaxed mb-6 group-hover:text-gray-200 transition-colors duration-300">
+                                    Krachtige en geoptimaliseerde websites gebouwd met moderne technologieën en best practices. Van eenvoudige sites tot complexe webapplicaties.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">React/Next.js</span>
+                                    <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Node.js</span>
+                                    <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Database Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 - Responsive Design -->
+                <div class="group relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative bg-white/10 backdrop-blur-lg p-10 rounded-2xl border border-white/20 group-hover:border-blue-400/50 transition-all duration-500 group-hover:-translate-y-2">
+                        <div class="flex items-start space-x-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-2xl">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">Responsive Design</h3>
+                                <p class="text-gray-300 leading-relaxed mb-6 group-hover:text-gray-200 transition-colors duration-300">
+                                    Perfecte weergave op alle apparaten, van desktop tot smartphone voor optimale gebruikerservaring. Mobiel-vriendelijke designs die presteren.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Mobile First</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Cross-browser</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 - SEO -->
+                <div class="group relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-green-600/20 to-emerald-600/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative bg-white/10 backdrop-blur-lg p-10 rounded-2xl border border-white/20 group-hover:border-green-400/50 transition-all duration-500 group-hover:-translate-y-2">
+                        <div class="flex items-start space-x-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-2xl">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-green-300 transition-colors duration-300">SEO Optimalisatie</h3>
+                                <p class="text-gray-300 leading-relaxed mb-6 group-hover:text-gray-200 transition-colors duration-300">
+                                    Geavanceerde SEO-technieken om hoger in Google te ranken en meer organisch verkeer te genereren. Technische en content optimalisatie.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm border border-green-500/30">Technical SEO</span>
+                                    <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm border border-green-500/30">Content Strategy</span>
+                                    <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm border border-green-500/30">Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to action -->
+            <div class="text-center mt-20">
+                <div class="inline-flex items-center space-x-4">
+                    <a href="pages/diensten.html" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                        Bekijk Alle Diensten
+                    </a>
+                    <a href="pages/contact.html" class="bg-white/10 backdrop-blur-lg text-white px-8 py-4 rounded-xl font-semibold border border-white/20 hover:bg-white/20 transition-all duration-300">
+                        Gratis Consultatie
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom gradient overlay -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-purple-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                Klaar om uw online aanwezigheid te verbeteren?
+            </h2>
+            <p class="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+                Neem vandaag nog contact met ons op en ontdek wat NovaWorks voor uw bedrijf kan betekenen.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="pages/contact.html" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+                    Gratis Offerte Aanvragen
+                </a>
+                <a href="pages/diensten.html" class="bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold border-2 border-purple-500 hover:bg-purple-800 transition-colors duration-200">
+                    Bekijk Onze Diensten
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Load navbar
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

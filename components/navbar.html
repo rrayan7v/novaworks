@@ -1,0 +1,130 @@
+<header id="navbar" class="fixed top-0 z-50 w-full transition-all duration-500 bg-white/95 backdrop-blur-lg shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-24 items-center">
+        <div class="flex w-full items-center justify-between">
+            <div class="relative z-10 flex-1">
+                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="flex items-center cursor-pointer">
+                    <div class="relative h-16 w-56">
+                        <img src="assets/images/novaworks.png" alt="NovaWorks Logo" class="object-cover object-left w-full h-full">
+                    </div>
+                    <div class="ml-2 h-10 w-px bg-gradient-to-b from-transparent via-purple-500/50 to-transparent"></div>
+                    <span class="ml-2 bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-sm font-medium text-transparent">
+                        Web Agency
+                    </span>
+                </button>
+            </div>
+
+            <nav class="hidden md:block">
+                <ul class="flex items-center gap-1">
+                    <li class="relative">
+                        <a href="index.html" class="rounded-full px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-indigo-50 hover:text-indigo-700">
+                            Home
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <div class="group relative">
+                            <button onclick="toggleSubmenu('Diensten')" class="flex items-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                                Diensten
+                                <svg class="ml-1 h-4 w-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div id="diensten-dropdown" class="absolute left-0 top-full z-20 mt-1 min-w-[200px] rounded-xl border border-indigo-100 bg-white p-2 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <a href="pages/diensten.html#webdesign" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                                    Webdesign
+                                </a>
+                                <a href="pages/diensten.html#webdevelopment" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                                    Webdevelopment
+                                </a>
+                                <a href="pages/diensten.html#responsive" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                                    Responsive Design
+                                </a>
+                                <a href="pages/diensten.html#seo" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                                    SEO
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <a href="pages/portfolio.html" class="rounded-full px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-indigo-50 hover:text-indigo-700">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="pages/contact.html" class="rounded-full px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-indigo-50 hover:text-indigo-700">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button onclick="toggleMobileMenu()" class="relative md:hidden text-gray-700 hover:text-purple-600 focus:outline-none p-2 rounded-lg hover:bg-purple-50 transition-colors duration-300">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-20 items-center justify-between">
+                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); toggleMobileMenu();" class="flex items-center cursor-pointer">
+                    <div class="relative h-16 w-48">
+                        <img src="assets/images/novaworks.png" alt="NovaWorks Logo" class="object-cover object-left w-full h-full">
+                    </div>
+                    <div class="ml-2 h-10 w-px bg-gradient-to-b from-transparent via-purple-500/50 to-transparent"></div>
+                    <span class="ml-2 bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-sm font-medium text-transparent">
+                        Web Agency
+                    </span>
+                </button>
+                <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-purple-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 pb-8">
+                <ul class="space-y-1">
+                    <li class="rounded-lg border-b border-gray-100 last:border-b-0">
+                        <a href="index.html" onclick="toggleMobileMenu()" class="block rounded-lg px-4 py-3 text-lg font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                            Home
+                        </a>
+                    </li>
+                    <li class="rounded-lg border-b border-gray-100 last:border-b-0">
+                        <button onclick="toggleMobileSubmenu('Diensten')" class="flex w-full items-center justify-between rounded-lg px-4 py-3 text-left text-lg font-medium text-gray-700 hover:bg-indigo-50">
+                            Diensten
+                            <svg class="h-5 w-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="mobile-diensten-dropdown" class="ml-4 mt-1 space-y-1 border-l-2 border-indigo-100 pl-4 bg-gray-50/50 py-2 rounded-r-lg overflow-hidden hidden">
+                            <a href="pages/diensten.html#webdesign" onclick="toggleMobileMenu()" class="block rounded-lg px-4 py-2 text-base text-gray-600 hover:bg-indigo-50 hover:text-indigo-700">
+                                Webdesign
+                            </a>
+                            <a href="pages/diensten.html#webdevelopment" onclick="toggleMobileMenu()" class="block rounded-lg px-4 py-2 text-base text-gray-600 hover:bg-indigo-50 hover:text-indigo-700">
+                                Webdevelopment
+                            </a>
+                            <a href="pages/diensten.html#responsive" onclick="toggleMobileMenu()" class="block rounded-lg px-4 py-2 text-base text-gray-600 hover:bg-indigo-50 hover:text-indigo-700">
+                                Responsive Design
+                            </a>
+                            <a href="pages/diensten.html#seo" onclick="toggleMobileMenu()" class="block rounded-lg px-4 py-2 text-base text-gray-600 hover:bg-indigo-50 hover:text-indigo-700">
+                                SEO
+                            </a>
+                        </div>
+                    </li>
+                    <li class="rounded-lg border-b border-gray-100 last:border-b-0">
+                        <a href="pages/portfolio.html" onclick="toggleMobileMenu()" class="block rounded-lg px-4 py-3 text-lg font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="rounded-lg border-b border-gray-100 last:border-b-0">
+                        <a href="pages/contact.html" onclick="toggleMobileMenu()" class="block rounded-lg px-4 py-3 text-lg font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
