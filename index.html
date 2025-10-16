@@ -590,7 +590,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-indigo-800 via-purple-600 to-indigo-700 text-white">
+    <section class="relative overflow-hidden bg-gradient-to-br from-indigo-800 via-purple-600 to-indigo-700 text-white min-h-[480px] md:min-h-[560px]">
         <!-- Decorative blurred orbs -->
         <div class="absolute -left-32 -top-32 w-96 h-96 rounded-full bg-indigo-500/30 blur-3xl pointer-events-none"></div>
         <div class="absolute -right-32 -bottom-32 w-96 h-96 rounded-full bg-purple-500/25 blur-3xl pointer-events-none"></div>
@@ -624,20 +624,15 @@
                         </a>
                         <a href="pages/portfolio.html" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/8 text-white px-5 py-3 rounded-lg transition">
                             Bekijk ons werk
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 5v14"></path></svg>
+                            <!-- Eye / view icon -->
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </a>
                     </div>
 
-                    <div class="mt-6 flex items-center gap-4">
-                        <div class="flex items-center gap-3">
-                            <img src="assets/images/novaworks.png" alt="NovaWorks" class="h-8 w-auto filter brightness-200 opacity-90">
-                        </div>
-                        <span class="text-sm text-indigo-100/80">Meer dan 100+ projecten afgerond sinds 2025</span>
-                    </div>
-
-                    <blockquote class="mt-6 border-l-2 border-white/10 pl-4 text-indigo-100/90 italic">
-                        "NovaWorks heeft onze conversie verdubbeld met een moderne website die echt bij onze doelgroep past." — Tevreden klant
-                    </blockquote>
+                    <!-- Logo and summary removed as requested -->
                 </div>
 
                 <!-- Right: Replaced image with a full, attractive contact form -->
