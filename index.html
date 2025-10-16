@@ -590,23 +590,107 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-purple-600">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold text-white mb-6">
-                Klaar om uw online aanwezigheid te verbeteren?
-            </h2>
-            <p class="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                Neem vandaag nog contact met ons op en ontdek wat NovaWorks voor uw bedrijf kan betekenen.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="pages/contact.html" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
-                    Gratis Offerte Aanvragen
-                </a>
-                <a href="pages/diensten.html" class="bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold border-2 border-purple-500 hover:bg-purple-800 transition-colors duration-200">
-                    Bekijk Onze Diensten
-                </a>
+    <section class="relative overflow-hidden bg-gradient-to-br from-indigo-800 via-purple-600 to-indigo-700 text-white">
+        <!-- Decorative blurred orbs -->
+        <div class="absolute -left-32 -top-32 w-96 h-96 rounded-full bg-indigo-500/30 blur-3xl pointer-events-none"></div>
+        <div class="absolute -right-32 -bottom-32 w-96 h-96 rounded-full bg-purple-500/25 blur-3xl pointer-events-none"></div>
+
+        <!-- Top wave -->
+        <svg class="absolute left-0 right-0 -top-6 w-full" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C240,120 480,0 720,40 C960,80 1200,20 1440,60 L1440 0 L0 0 Z" fill="rgba(255,255,255,0.03)"/>
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Left: Text + CTAs -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-3 bg-white/6 px-3 py-1 rounded-full border border-white/8 w-max">
+                        <svg class="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m4-4h.01M12 20v-2m0 0a4 4 0 110-8 4 4 0 010 8z"></path></svg>
+                        <span class="text-sm text-white/90 font-medium">100% maatwerk & performance</span>
+                    </div>
+
+                    <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+                        Websites die conversie, vertrouwen en groei opleveren
+                    </h2>
+
+                    <p class="text-lg text-indigo-100 max-w-2xl">
+                        Van strategisch ontwerp tot snelle, veilige implementatie — wij bouwen digitale ervaringen die uw klanten overtuigen en uw bedrijf laten groeien.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-3 mt-4">
+                        <a href="pages/contact.html" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-5 py-3 rounded-lg shadow-lg hover:scale-[1.02] transition transform">
+                            Gratis offerte aanvragen
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                        <a href="pages/portfolio.html" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/8 text-white px-5 py-3 rounded-lg transition">
+                            Bekijk ons werk
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 5v14"></path></svg>
+                        </a>
+                    </div>
+
+                    <div class="mt-6 flex items-center gap-4">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/images/novaworks.png" alt="NovaWorks" class="h-8 w-auto filter brightness-200 opacity-90">
+                        </div>
+                        <span class="text-sm text-indigo-100/80">Meer dan 100+ projecten afgerond sinds 2025</span>
+                    </div>
+
+                    <blockquote class="mt-6 border-l-2 border-white/10 pl-4 text-indigo-100/90 italic">
+                        "NovaWorks heeft onze conversie verdubbeld met een moderne website die echt bij onze doelgroep past." — Tevreden klant
+                    </blockquote>
+                </div>
+
+                <!-- Right: Replaced image with a full, attractive contact form -->
+                <div class="relative">
+                    <div class="max-w-md mx-auto">
+                        <div class="rounded-xl bg-white border border-gray-100 p-5 shadow-sm">
+                            <div class="mb-3">
+                                <h3 class="text-lg font-semibold text-slate-900">Plan een kort, gratis gesprek</h3>
+                                <p class="text-sm text-slate-600">Kort en vrijblijvend — we reageren binnen 24 uur.</p>
+                            </div>
+
+                            <form id="cta-form" action="#" method="post" class="space-y-3">
+                                <div>
+                                    <label for="cta-name" class="sr-only">Naam</label>
+                                    <input id="cta-name" name="naam" type="text" required class="w-full px-3 py-2 rounded-md bg-white placeholder-slate-400 text-slate-900 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-300 transition" placeholder="Naam *">
+                                    <p class="mt-1 text-xs text-red-600 hidden" id="err-name">Vul uw naam in.</p>
+                                </div>
+
+                                <div>
+                                    <label for="cta-email" class="sr-only">E-mail</label>
+                                    <input id="cta-email" name="email" type="email" required class="w-full px-3 py-2 rounded-md bg-white placeholder-slate-400 text-slate-900 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-300 transition" placeholder="E-mail *">
+                                    <p class="mt-1 text-xs text-red-600 hidden" id="err-email">Geef een geldig e-mailadres op.</p>
+                                </div>
+
+                                <div>
+                                    <label for="cta-message" class="sr-only">Bericht</label>
+                                    <input id="cta-message" name="bericht" type="text" class="w-full px-3 py-2 rounded-md bg-white placeholder-slate-400 text-slate-900 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-300 transition" placeholder="Korte omschrijving (optioneel)">
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <input id="cta-gdpr" name="gdpr" type="checkbox" class="h-4 w-4 rounded text-indigo-600 bg-white border border-gray-200 focus:ring-indigo-300">
+                                    <label for="cta-gdpr" class="text-xs text-slate-600">Ik ga akkoord met contact over mijn aanvraag</label>
+                                </div>
+
+                                <div>
+                                    <button id="cta-submit" type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium shadow transition">
+                                        <span id="cta-submit-text">Vraag consult aan</span>
+                                        <svg id="cta-spinner" class="w-4 h-4 hidden animate-spin" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path></svg>
+                                    </button>
+                                </div>
+
+                                <p class="text-xs text-slate-500">We gebruiken uw gegevens alleen om uw aanvraag te behandelen.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Bottom wave -->
+        <svg class="absolute left-0 right-0 -bottom-6 w-full" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C240,0 480,120 720,60 C960,0 1200,120 1440,60 L1440 100 L0 100 Z" fill="rgba(0,0,0,0.06)"/>
+        </svg>
     </section>
 
     <!-- Footer -->
@@ -614,6 +698,58 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script>
+        // Client-side validation & UX for CTA form
+        (function(){
+            const form = document.getElementById('cta-form');
+            if(!form) return;
+
+            const name = document.getElementById('cta-name');
+            const email = document.getElementById('cta-email');
+            const phone = document.getElementById('cta-phone');
+            const submit = document.getElementById('cta-submit');
+            const submitText = document.getElementById('cta-submit-text');
+            const spinner = document.getElementById('cta-spinner');
+            const errName = document.getElementById('err-name');
+            const errEmail = document.getElementById('err-email');
+
+            function validateEmail(v){
+                return /\S+@\S+\.\S+/.test(v);
+            }
+
+            function showError(el){ el.classList.remove('hidden'); }
+            function hideError(el){ el.classList.add('hidden'); }
+
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                let ok = true;
+                if(!name.value.trim()){ showError(errName); ok = false; } else hideError(errName);
+                if(!validateEmail(email.value.trim())){ showError(errEmail); ok = false; } else hideError(errEmail);
+
+                if(!ok) return;
+
+                // Simulate submission
+                submit.setAttribute('disabled','disabled');
+                spinner.classList.remove('hidden');
+                submitText.textContent = 'Verzenden...';
+
+                setTimeout(()=>{
+                    spinner.classList.add('hidden');
+                    submitText.textContent = 'Verzonden ✓';
+                    // small success state
+                    submit.classList.add('bg-green-600');
+                    submit.classList.remove('from-indigo-600');
+                    // reset form after brief delay
+                    setTimeout(()=>{
+                        form.reset();
+                        submit.removeAttribute('disabled');
+                        submitText.textContent = 'Vraag consult aan';
+                        submit.classList.remove('bg-green-600');
+                    }, 1600);
+                }, 1100);
+            });
+        })();
+    </script>
     <script>
         // Load navbar
         fetch('components/navbar.html')
